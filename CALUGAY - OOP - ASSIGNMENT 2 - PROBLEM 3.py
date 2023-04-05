@@ -46,7 +46,7 @@ while True:
 
         # Validate user input
         if not user_plaintext.isupper():
-            raise ValueError("\033[3mError: Plaintext message should be in all uppercase letters.\033[0m")
+            raise ValueError("\033[3mPlaintext message should be in all uppercase letters.\033[0m")
         elif ' ' in user_plaintext:
             raise ValueError("Plaintext message should not contain spaces.")
         else:
